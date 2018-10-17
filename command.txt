@@ -1,0 +1,30 @@
+Node
+node -version
+node -v
+
+Node Package Manager
+npm -v
+
+TypeScript: Superset JavaScript
+npm install - typescript
+tsc -v
+
+angular CLI: Command Line Interface
+npm install -g angular-cli
+ng -v
+
+Comnando angular CLI
+ng new              nueva carpeta, con un nuevo proyecto
+ng init             no crea una nueva carpeta, crea un nuevo proyecto
+ng server           iniciar la aplicación
+ng generate ó ng g
+    ng generate component   ng g c
+    ng generate service     ng g s
+    ng generate class       ng g cl
+    ng generate interface   ng g i
+ng lint             organización de código
+ng test             ejecución de test unitarios de los componentes utilizando Karme y Jasmine
+
+
+
+

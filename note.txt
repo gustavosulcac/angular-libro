@@ -1,0 +1,42 @@
+Angular, framework SPA para el desarrollo front-end, con una caracteristica interesante: modularización
+
+trozos HTML:    template
+clases:         lógica del componente
+decorators:     diferenciar un componente de otro
+
+En Angular todo es un componente.
+
+Componente: 
+clase responsable por controlar la view, definimos la lógica que sera aplicada para el control y acciones
+de la view.
+
+Template:
+es la view del componente
+
+Decorator: @Component @Injectable
+responsable por realizar la configuración entre la clase y el template
+
+Metadata: 
+* selector:       nombre del componente dentro de una página HTML
+* templateUrl:    template en HTML que este componente tiene
+  styleUrls:      estilo CSS de este componente
+  providers:      servicios que este componente necesita.
+                  si un servicio es declarado dentro de un componente, solamente este tendra acceso al servicio.
+                  En caso se requiera que un servicio sea utilizado por varios componentes, tendremos que 
+                  declararlo en el archivo de configuración global del proyecto, el app-module.ts      
+
+Databinding<4>:         sincronizar datos entre clase de componente y template
+ Interpolación:         {{ variable }}
+                        componente => template  
+ Property binding:      [ propiedad ]
+                        componente => <etiqueta> template
+ Event binding:         ( acción )
+                        componente <= template
+                        es usado en la interacción con el usuario y a cada acción de el(sea un click, entrada de datos
+                        o alteración en el template), el evento actualiza o manipula algo dentro de la clase del componente
+Two way data binding:   property binding + event binding
+                        [(ngModel)] = "variable"
+                        componente <=> template
+                        Podemos utilizarlo dentro de los formularios, a cada modificación realizada en cualquier campo, el
+                        valor sera enviada para la clase componente, asi podra ser validado conforme a la regla del formularios
+                        
